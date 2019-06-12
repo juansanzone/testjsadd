@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://youcanridit.com"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = "Juan Sanzone"
-  s.source           = { :git => "https://github.com/mercadolibre/meli-card-drawer-ios", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/juansanzone/testjsadd", :tag => s.version.to_s }
   s.swift_version    = '4.2'
   s.platform         = :ios, '10.0'
   s.requires_arc     = true
