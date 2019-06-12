@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "JSAddCard"
-  s.version          = "1.0.1"
+  s.version          = "1.0.4"
   s.summary          = "JSAddCard for iOS"
   s.homepage         = "http://youcanridit.com"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = "Juan Sanzone"
-  s.source           = { :git => "https://github.com/juansanzone/testjsadd", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/juansanzone/testjsadd.git", :tag => s.version.to_s }
   s.swift_version    = '4.2'
   s.platform         = :ios, '10.0'
   s.requires_arc     = true
