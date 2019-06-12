@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MLAddCardViewController" customModule="MLAddCard" customModuleProvider="target">
+            <connections>
+                <outlet property="cardContainerView" destination="ZxW-jg-Klf" id="ZCp-gc-hcW"/>
+                <outlet property="containerBottomConstraint" destination="lSf-V6-Bcr" id="Zy0-8D-pRw"/>
+                <outlet property="identificationLabel" destination="Vkm-Vg-DVt" id="Dzi-pE-JHk"/>
+                <outlet property="identificationView" destination="1p2-Ad-ga6" id="Ew3-0z-l6l"/>
+                <outlet property="progressView" destination="0eZ-bh-THy" id="a7W-se-41A"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar nueva tarjeta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6d-IT-wbQ">
+                    <rect key="frame" x="101.5" y="14.5" width="172.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.1095336294" green="0.1095336294" blue="0.1095336294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0eZ-bh-THy">
+                    <rect key="frame" x="0.0" y="45" width="375" height="2"/>
+                    <color key="progressTintColor" red="0.20988374970000001" green="0.5322352011" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="trackTintColor" red="0.73689987180000005" green="0.73689987180000005" blue="0.73689987180000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </progressView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZl-41-2v9" userLabel="mainContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mX-n5-729" userLabel="childContainerView">
+                            <rect key="frame" x="0.0" y="207.5" width="375" height="252"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxW-jg-Klf" userLabel="cardContainer">
+                                    <rect key="frame" x="40" y="0.0" width="295" height="182"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ZxW-jg-Klf" secondAttribute="height" multiplier="1.618" id="jlc-hX-zmT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1p2-Ad-ga6" userLabel="identificationView">
+                                    <rect key="frame" x="380" y="0.0" width="295" height="182"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NoO-aC-KZ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="295" height="182"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-7K-gEH">
+                                            <rect key="frame" x="16" y="53.5" width="75" height="75"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="identification" translatesAutoresizingMaskIntoConstraints="NO" id="Kiz-An-eDM">
+                                                    <rect key="frame" x="4" y="4" width="67" height="67"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Kiz-An-eDM" firstAttribute="top" secondItem="X4f-7K-gEH" secondAttribute="top" constant="4" id="IiN-tR-m96"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kiz-An-eDM" secondAttribute="bottom" constant="4" id="JQL-3b-k3G"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kiz-An-eDM" secondAttribute="trailing" constant="4" id="K0T-Vl-IP3"/>
+                                                <constraint firstAttribute="height" constant="75" id="Sdb-Fj-P4B"/>
+                                                <constraint firstItem="Kiz-An-eDM" firstAttribute="leading" secondItem="X4f-7K-gEH" secondAttribute="leading" constant="4" id="r2e-Go-J96"/>
+                                                <constraint firstAttribute="width" constant="75" id="v1A-hK-RxM"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <real key="value" value="37.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI DEL TITULAR" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hi-df-54z">
+                                            <rect key="frame" x="107" y="61.5" width="172" height="18"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkm-Vg-DVt">
+                                            <rect key="frame" x="107" y="83.5" width="0.0" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                            <color key="textColor" white="0.19902254562876709" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96689019600000004" green="0.96565111209999999" blue="0.98729482130000001" alpha="0.66133347602739723" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="NoO-aC-KZ4" firstAttribute="leading" secondItem="1p2-Ad-ga6" secondAttribute="leading" id="3MY-91-WgA"/>
+                                        <constraint firstAttribute="bottom" secondItem="NoO-aC-KZ4" secondAttribute="bottom" id="3p7-kf-EUI"/>
+                                        <constraint firstItem="Vkm-Vg-DVt" firstAttribute="leading" secondItem="6hi-df-54z" secondAttribute="leading" id="Kiv-MV-ykW"/>
+                                        <constraint firstItem="X4f-7K-gEH" firstAttribute="leading" secondItem="1p2-Ad-ga6" secondAttribute="leading" constant="16" id="Qda-yD-xyE"/>
+                                        <constraint firstAttribute="trailing" secondItem="6hi-df-54z" secondAttribute="trailing" constant="16" id="ga4-fQ-7JK"/>
+                                        <constraint firstItem="NoO-aC-KZ4" firstAttribute="top" secondItem="1p2-Ad-ga6" secondAttribute="top" id="hfk-Ht-xdT"/>
+                                        <constraint firstItem="X4f-7K-gEH" firstAttribute="centerY" secondItem="1p2-Ad-ga6" secondAttribute="centerY" id="ijN-Su-Fgg"/>
+                                        <constraint firstItem="Vkm-Vg-DVt" firstAttribute="top" secondItem="6hi-df-54z" secondAttribute="bottom" constant="4" id="p82-ge-gx3"/>
+                                        <constraint firstAttribute="trailing" secondItem="NoO-aC-KZ4" secondAttribute="trailing" id="rwj-tv-UCq"/>
+                                        <constraint firstItem="6hi-df-54z" firstAttribute="leading" secondItem="X4f-7K-gEH" secondAttribute="trailing" constant="16" id="wFn-OP-y7j"/>
+                                        <constraint firstItem="6hi-df-54z" firstAttribute="top" secondItem="X4f-7K-gEH" secondAttribute="top" constant="8" id="zvt-KG-apM"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="ZxW-jg-Klf" firstAttribute="leading" secondItem="7mX-n5-729" secondAttribute="leading" constant="40" id="DEW-yy-e0a"/>
+                                <constraint firstItem="1p2-Ad-ga6" firstAttribute="top" secondItem="ZxW-jg-Klf" secondAttribute="top" id="Dv0-cF-PuF"/>
+                                <constraint firstItem="1p2-Ad-ga6" firstAttribute="bottom" secondItem="ZxW-jg-Klf" secondAttribute="bottom" id="NFe-3B-ugZ"/>
+                                <constraint firstAttribute="height" secondItem="ZxW-jg-Klf" secondAttribute="height" constant="70" id="Uti-No-HUe"/>
+                                <constraint firstAttribute="trailing" secondItem="ZxW-jg-Klf" secondAttribute="trailing" constant="40" id="VXh-cy-u8j"/>
+                                <constraint firstItem="1p2-Ad-ga6" firstAttribute="width" secondItem="ZxW-jg-Klf" secondAttribute="width" id="e46-q6-Er2"/>
+                                <constraint firstItem="ZxW-jg-Klf" firstAttribute="top" secondItem="7mX-n5-729" secondAttribute="top" id="nCL-iv-LWp"/>
+                                <constraint firstItem="1p2-Ad-ga6" firstAttribute="leading" secondItem="ZxW-jg-Klf" secondAttribute="trailing" constant="45" id="q9j-gJ-iyQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="7mX-n5-729" firstAttribute="centerY" secondItem="JZl-41-2v9" secondAttribute="centerY" id="Mkx-1B-ykq"/>
+                        <constraint firstAttribute="trailing" secondItem="7mX-n5-729" secondAttribute="trailing" id="fS6-96-22M"/>
+                        <constraint firstItem="7mX-n5-729" firstAttribute="leading" secondItem="JZl-41-2v9" secondAttribute="leading" id="rTv-vv-ZtK"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="a14-Mb-foO" appends="YES" id="1aL-xQ-IfP"/>
+                        <outletCollection property="gestureRecognizers" destination="isF-bc-AIU" appends="YES" id="Ema-GS-huh"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0eZ-bh-THy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="45" id="2cn-TK-EUa"/>
+                <constraint firstItem="0eZ-bh-THy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6Ib-4W-kON"/>
+                <constraint firstItem="JZl-41-2v9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Koi-TQ-nxt"/>
+                <constraint firstItem="0eZ-bh-THy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Okd-OE-EXW"/>
+                <constraint firstItem="u6d-IT-wbQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VFd-Bc-jdS"/>
+                <constraint firstItem="0eZ-bh-THy" firstAttribute="top" secondItem="u6d-IT-wbQ" secondAttribute="bottom" constant="10" id="cHz-Cm-vPD"/>
+                <constraint firstItem="JZl-41-2v9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="geI-9L-dKY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JZl-41-2v9" secondAttribute="bottom" id="lSf-V6-Bcr"/>
+                <constraint firstItem="JZl-41-2v9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ykB-mY-F7P"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+        <swipeGestureRecognizer direction="up" id="a14-Mb-foO">
+            <connections>
+                <action selector="didSwipeUp:" destination="-1" id="dIH-mO-rTl"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="isF-bc-AIU">
+            <connections>
+                <action selector="didSwipeDown:" destination="-1" id="wFg-a7-qjb"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="identification" width="69" height="74"/>
+    </resources>
+</document>
