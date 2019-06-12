@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "JSAddCard"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "JSAddCard for iOS"
-  s.homepage         = ""
+  s.homepage         = "http://youcanridit.com"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = "Juan Sanzone"
   s.source           = { :git => "https://github.com/mercadolibre/meli-card-drawer-ios", :tag => s.version.to_s }
